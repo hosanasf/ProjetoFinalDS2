@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head th:replace="~{base :: head}">    
+    <body>
+    <div th:replace="~{base :: logo}"></div>
+    <div class="container col-4">
+        
+        <div class="card mt-2 ">
+            <form th:object="${requisicaoNovoPedido}" class="card-body" action="/pedido/novo" method="POST">
+                <div class="form-group">
+                    <label>Produto</label>
+                    <input th:field="*{txtProduto}" th:errorclass="is-invalid" class="form-control" placeholder="Nome do produto" name="txtProduto" />
+                    <div class="invalid-feedback" th:errors="*{txtProduto}">
+                        
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label>Url Produto</label>
+                    <input th:field="*{txtUrlProduto}" th:errorclass="is-invalid" class="form-control" placeholder="Url do produto" name="txtUrlProduto" />
+                    <div class="invalid-feedback" th:errors="*{txtUrlProduto}">
+                        
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label>Url Imagem</label>
+                    <input th:field="*{txtUrlImagem}" th:errorclass="is-invalid" class="form-control" placeholder="Url da imagem" name="txtUrlImagem" />
+                    <div class="invalid-feedback" th:errors="*{txtUrlImagem}">
+                        
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label>Descrição</label>
+                    <textarea class="form-control" name="txtDescricao" placeholder="Descreva sobre o livro">
+                        
+                    </textarea>
+                </div> 
+                <button class="btn btn-dark" type="submit" name="btnCadastrar" >Cadastrar</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
