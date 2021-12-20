@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
+  <style>
         .logo{
             background-color: #f7cf13;
             color: #fff;
@@ -12,8 +12,8 @@
            background-color: #f7cf13;
            color: #f7cf13;
         }
-        
-    </style>
+  
+  </style>
 </head>
 
 <div th:fragment="logo" class="navbar logo navbar-expand-lg navbar-light b-light mb-0 ">
@@ -32,17 +32,17 @@
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Pedidos</a>
-      </li>
+      </li>   
     </ul>
     <!--form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
     </form-->
 
-  </div>
+  </div>  
 </nav>
 </div>
-
+       
 <div th:fragment="titulo(valor)" class="jumbotron mb-0">
     <div class="container col-8">
         <h1 class="display-4" th:text="${valor}"></h1>
